@@ -1,0 +1,40 @@
+/* Light <-> Dark のモード切り替えをスムーズにする */
+/*body {*/
+/*  transition: background-color 0.3s, color 0.3s;*/
+/*}*/
+
+/* Lightモードのスタイル */
+body.light-mode,
+body {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/* Darkモードのスタイル */
+body.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+/* prefers-color-scheme による初期モード(Dark)の自動設定 */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #121212;
+    color: #ffffff;
+  }
+}
+
+button {
+  padding: 10px 20px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+
+  /* 画面右上に固定 */
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000; /* 他の要素の上に表示 */
+}
