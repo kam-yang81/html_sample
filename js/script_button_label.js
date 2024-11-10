@@ -1,3 +1,4 @@
+// ページ表示を切り替える（切り替えボタンはラベル表示）
 // テーマを切り替えるボタン
 const themeToggleButton = document.getElementById("toggle-theme");
 
