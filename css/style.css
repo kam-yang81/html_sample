@@ -1,11 +1,10 @@
 /* Light <-> Dark のモード切り替えをスムーズにする */
-/*body {*/
-/*  transition: background-color 0.3s, color 0.3s;*/
-/*}*/
+body {
+  transition: background-color 0.3s, color 0.3s;
+}
 
 /* Lightモードのスタイル */
-body.light-mode,
-body {
+body.light-mode {
   background-color: #ffffff;
   color: #000000;
 }
@@ -14,14 +13,6 @@ body {
 body.dark-mode {
   background-color: #121212;
   color: #ffffff;
-}
-
-/* prefers-color-scheme による初期モード(Dark)の自動設定 */
-@media (prefers-color-scheme: dark) {
-  body {
-    background-color: #121212;
-    color: #ffffff;
-  }
 }
 
 button {
