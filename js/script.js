@@ -48,6 +48,7 @@ themeToggleButton.addEventListener("click", () => {
 });
 
 // prefers-color-scheme の変更を監視し、Autoモードの場合のみ自動的に切り替え
+// 閲覧中にOSのテーマ設定を切り替えると、それを検知してページ表示を自動的に切り替える
 const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
 prefersDarkScheme.addEventListener("change", () => {
   if (localStorage.getItem("theme") === "auto") {
