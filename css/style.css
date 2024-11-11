@@ -18,14 +18,14 @@ body.dark-mode {
 button {
   padding: 10px 20px;
   cursor: pointer;
-  background-color: #007bff;
+  background-color: darkgreen;
   color: white;
   border: none;
   border-radius: 5px;
 
-  /* 画面右上に固定 */
-  position: fixed;
-  top: 20px;
-  right: 20px;
-  z-index: 1000; /* 他の要素の上に表示 */
+  /*!* 画面右上に固定 *!*/
+  /*position: fixed;*/
+  /*top: 20px;*/
+  /*right: 20px;*/
+  /*z-index: 1000; !* 他の要素の上に表示 *!*/
 }
